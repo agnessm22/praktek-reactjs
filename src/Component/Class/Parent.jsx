@@ -10,9 +10,18 @@ class Parent extends Component {
         }
     }
 
+    beliProduk = (jumlah) => {
+        this.setState({
+            stock: this.state.stock - jumlah 
+        })
+    }
+
     render() {
         return (
-            <Child1 stock={this.state.stock}/>
+            <Child1 
+            stock={this.state.stock}
+            fungsi={this.beliProduk.bind(this)}/>
+
         )
     }
 }
