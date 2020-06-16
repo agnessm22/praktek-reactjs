@@ -13,7 +13,7 @@ class Child1 extends Component {
     render() {
         return (
             <div>
-                <h3>Child Component</h3>
+                <h3>Child 1</h3>
                 <p>Stok Produk: {this.props.stock}</p>
                 <button onClick={()=>this.props.fungsi(this.minBeli)}>Beli</button>
             </div>
